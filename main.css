@@ -1,0 +1,201 @@
+
+a {
+    text-decoration: none;
+    outline: none!important;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 25px 0;
+    height: 94px;
+    z-index: 999;
+}
+
+.banner {
+    width: 100%;
+    background: url(main-bg-4.jpg) no-repeat 27% top;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desk-menu .btn-1 {
+    float: right;
+    color: white;
+}
+
+.btn-1 {
+    display: inline-block;
+    height: 44px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 25px;
+    color: #00aeef;
+    font-size: 15px;
+    border: 2px solid #00aeef;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.desk-menu .main-menu {
+    float: right;
+    display: block;
+    margin-right: 30px;
+}
+
+.desk-menu .main-menu li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    line-height: 40px;
+}
+
+.nav-icon {
+    /*right: 40px;*/
+    /*top: 29px;*/
+    position: absolute;
+    right: 19px;
+    top: 27px;
+    font-size: 40px;
+    color: white;
+    z-index: 99;
+    line-height: 40px;
+    margin-right: 43px;
+}
+
+.desk-menu a {
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+    color: white;
+}
+
+/*.text-p {*/
+    /*margin-left: 40%;*/
+    /*margin-top: -20%;*/
+    /*color: white;*/
+    /*font-size: 25px;*/
+/*}*/
+
+
+#sec .item
+{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+    background-color: green;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+}
+
+#sec .item:hover
+{
+    transform: scale(1.5);
+    margin-right: 6%; /*fallback for old browsers */
+    margin-right: calc(5% + 10px);
+    margin-left: 5%;
+}
+
+
+/*===========================
+        About Section
+============================ */
+
+.about-section {
+    margin-top: 6%;
+}
+
+.about-section h2 {
+    color: #5e707d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.about-section .border-bottom-h2 {
+    border-bottom: 4px solid #00aeef;
+    width: 8%;
+    margin-bottom: 10px;
+}
+
+.about-section .content-1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+    word-spacing: 0;
+    text-decoration: rgb(46, 50, 53);
+}
+
+
+.about-section .content-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/*===========================
+        Our Work
+============================ */
+
+.our-works {
+    margin-top: 6%;
+}
+
+.our-works h2{
+    color: #5e707d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.our-works .border-bottom-our-work {
+    border-bottom: 4px solid #00aeef;
+    width: 27%;
+    margin-bottom: 10px;
+}
+
+.our-works .pic-1 {
+    float: right;
+}
+
+.our-works .pic-1 img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.our-works .pic-1 .work-details {
+    bottom: auto;
+    top: 30px;
+    left: auto;
+    right: 30px;
+}
+
+.our-works .pic-1 .work-details h4 {
+    margin-top: -59%;
+    margin-left: 65%;
+    color: white;
+    font-size: 18px;
+}
+
+.our-works .pic-1 .work-details a {
+    margin-left: 65%;
+    display: none;
+    text-decoration: none;
+    color: #a9a7a5;
+    opacity: 1;
+}
+
+.our-works .pic-1:hover a{
+    display: block;
+
+}
