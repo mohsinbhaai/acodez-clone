@@ -146,6 +146,11 @@ header {
 ============================ */
 
 .our-works {
+    position: relative;
+    float: right;
+    width: 100%;
+    min-height: 780px;
+    margin-bottom: 80px;
     margin-top: 6%;
 }
 
@@ -197,5 +202,271 @@ header {
 
 .our-works .pic-1:hover a{
     display: block;
+}
 
+/* ------------------------------------ */
+
+.our-works .pic-2 {
+    position: absolute;
+    right: 32%;
+    top: 120px;
+}
+
+.our-works .pic-2 img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.our-works .pic-2 .work-details {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 14px;
+    color: #5e707d;
+}
+
+.our-works .pic-2 .work-details a {
+    font-size: 14px;
+    color: #00aeef;
+    display: none;
+}
+
+.our-works .pic-2:hover a{
+    display: block;
+}
+
+/*------------------------------------------ */
+
+.our-works .pic-3 {
+    position: absolute;
+    right: 206px;
+    top: 34%;
+}
+
+.our-works .pic-3 img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.our-works .pic-3 h4 {
+    font-size: 17px;
+    font-weight: 100;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.our-works .pic-3 .work-details {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 14px;
+    color: #5e707d;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.our-works .pic-3 a {
+    font-size: 14px;
+    color: #00aeef;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.our-works .pic-3:hover .work-details{
+    display: block;
+}
+
+/* --------------------------------------- */
+
+.our-works .pic-4 {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+}
+
+.our-works .pic-4 img {
+    width: 78%;
+    margin-left: -4%;
+    margin-bottom: 22%;
+    max-width: 100%;
+}
+
+.our-works .pic-4 .work-details {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 14px;
+    color: #5e707d;
+}
+
+.our-works .pic-4 h4 {
+    font-size: 17px;
+    font-weight: 100;
+    color: #000;
+    margin-bottom: 33px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.our-works .pic-4 a {
+    font-size: 14px;
+    color: #00aeef;
+    opacity: 0;
+}
+
+/*----------------------------*/
+
+.our-works .pic-5 {
+    position: absolute;
+    right: 275px;
+    bottom: 0;
+}
+
+.our-works .pic-5 img {
+    width: 96%;
+}
+
+
+/*--------------------------*/
+
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/***************/
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
