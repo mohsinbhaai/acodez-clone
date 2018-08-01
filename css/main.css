@@ -13,24 +13,24 @@ a {
     /*transition: all .1s;*/
 /*}*/
 
-#navbar {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display:block;
-    transition: top 0.3s;
-}
+/*#navbar {*/
+    /*background-color: #333;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*display:block;*/
+    /*transition: top 0.3s;*/
+/*}*/
 
-header {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    padding: 25px 0;
-    height: 94px;
-    z-index: 999;
-}
+/*header {*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*padding: 25px 0;*/
+    /*height: 94px;*/
+    /*z-index: 999;*/
+/*}*/
 
 .banner {
     width: 100%;
@@ -1153,15 +1153,16 @@ header {
     }
 }
 
-@media (max-width: 1024px) {
-    #hover-expand .col-md-3 {
-        padding: 15px;
-        margin-bottom: 45px;
-        /*margin: 15px;*/
-    }
-}
+/*@media (min-width: 1200px) and (max-width: 1400px){*/
 
-@media (max-width: 435px) {
+    /*#hover-expand .col-md-3 {*/
+        /*!*padding: 2px;*!*/
+        /*border: 1px solid black;*/
+        /*!*margin: 15px;*!*/
+    /*}*/
+/*}*/
+
+@media (min-width: 575px) {
     .cycle-bg .flip-container .flipper .front h2 {
         font-size: 50px;
     }
@@ -1173,6 +1174,40 @@ header {
 
     #hover-expand .col-md-3 {
         padding: 15px;
+        /*margin: 15px;*/
+    }
+
+}
+
+    @media (min-width : 375px) {
+
+        #hover-expand .col-md-3 {
+            padding: 15px;
+            margin: 15px;
+        }
+
+        .cycle-bg .flip-container .flipper .front h2 {
+            font-size: 50px;
+        }
+    }
+
+@media (min-width : 275px) {
+
+    #hover-expand .col-md-3 {
+        padding: 15px;
         margin: 15px;
     }
+
+    .cycle-bg .flip-container .flipper .front h2 {
+        font-size: 50px;
+    }
 }
+
+    /*@media  (min-width: 320px){*/
+        /*#hover-expand .col-md-3 {*/
+            /*padding: 15px;*/
+            /*margin: 15px;*/
+        /*}*/
+    /*}*/
+
+
