@@ -19,6 +19,32 @@
     <title>Document</title>
 </head>
 <body>
+<!--</nav>-->
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
 <!--<a class="navbar-brand" href="#">Fixed navbar</a>-->
 <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
@@ -61,43 +87,43 @@
 <!--</ul>-->
 <!--</div>-->
 <!--</nav>-->
-<header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-6">
-                <a href="#">
-                    <img src="https://cdn.acodez.in/wp-content/themes/acodez/images/logo.png" alt="">
-                </a>
-            </div>
-            <div class="col-sm-9 col-6 desk-menu">
-                <a href="#" class="btn-1 enquiry-btn"><span>Quick Enquiry</span></a>
-                <ul class="main-menu">
-                    <li>
-                        <a href="https://acodez.in/">
-                            <i class="fa fa-home"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="work.html">Work</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Awards</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!--<a href="" class="menu-button nav-icon fas fa-bars"></a>-->
-        </div>
-    </div>
-</header>
+<!--<header id="header">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-3 col-6">-->
+                <!--<a href="#">-->
+                    <!--<img src="https://cdn.acodez.in/wp-content/themes/acodez/images/logo.png" alt="">-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-sm-9 col-6 desk-menu">-->
+                <!--<a href="#" class="btn-1 enquiry-btn"><span>Quick Enquiry</span></a>-->
+                <!--<ul class="main-menu">-->
+                    <!--<li>-->
+                        <!--<a href="https://acodez.in/">-->
+                            <!--<i class="fa fa-home"></i>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="work.html">Work</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="services.html">Services</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Awards</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Blog</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="contact.html">Contact</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;<a href="" class="menu-button nav-icon fas fa-bars"></a>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -275,6 +301,31 @@
         </div>
     </div>
 </section>
+<script>
+    (function ($) {
 
+        var navbar = $('.navbar');
+        var lastScrollTop = 0;
+
+        $(window).scroll(function () {
+            var st = $(this).scrollTop();
+            // Scroll down
+            if (st > lastScrollTop) {
+                navbar.fadeOut();
+            }
+            // Scroll up but still lower than 200 (change that to whatever suits your need)
+            else if(st < lastScrollTop && st > 200) {
+                navbar.fadeIn();
+                navbar.removeClass('navbar-light bg-transparent').addClass('navbar-dark bg-custom');
+            }
+            // Reached top
+            else {
+                navbar.removeClass('navbar-dark bg-custom').addClass('navbar-light bg-transparent');
+            }
+            lastScrollTop = st;
+        });
+
+    })(jQuery);
+</script>
 </body>
 </html>

@@ -3,6 +3,10 @@ a {
     outline: none!important;
 }
 
+.bg-custom {
+    background-color: #333
+}
+
 #navbar {
     background-color: #333;
     position: fixed;
