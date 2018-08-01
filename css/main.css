@@ -3,6 +3,16 @@ a {
     outline: none!important;
 }
 
+/* Set your background color */
+.bg-custom {
+    background-color: #333
+}
+/* Transition effect */
+/*.navbar {*/
+    /*-webkit-transition: all .3s ease 0s;*/
+    /*transition: all .1s;*/
+/*}*/
+
 #navbar {
     background-color: #333;
     position: fixed;
