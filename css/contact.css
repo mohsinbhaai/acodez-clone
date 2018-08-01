@@ -579,11 +579,18 @@ button, input, select, textarea {
 
 /*---- MAp start ---------*/
 
+.location-section .location-headings {
+    margin: 0 auto;
+}
+
+.location-section .location-map {
+    width: 100%;
+}
+
 .location-section h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 120px;
     font-weight: 600;
-    margin-left: 50%;
     color: #6F7A82;
     opacity: .10;
 }
@@ -659,4 +666,23 @@ button, input, select, textarea {
     font-size: 35px;
     color: #92a0a9;
     text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 592px) {
+    .location-section h1 {
+        font-size: 67px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .location-section h1 {
+        font-size: 37px;
+    }
+
+    /*.footer-1 .services {*/
+        /*display: none;*/
+    /*}*/
 }

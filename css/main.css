@@ -85,34 +85,79 @@ header {
     color: white;
 }
 
-/*.text-p {*/
-/*margin-left: 40%;*/
-/*margin-top: -20%;*/
-/*color: white;*/
-/*font-size: 25px;*/
-/*}*/
+
+/*=========================
+
+       On hover Expand
+
+ =========================*/
 
 
-#sec .item
-{
+/*========= row 1 =======*/
+
+#hover-expand {
     position: relative;
-    display: inline-block;
-    width: 20%;
-    height: 100px;
-    background-color: green;
-    margin-right: 10px;
-    transition: all 0.4s ease;
+    z-index: 20;
 }
 
-#sec .item:hover
-{
-    transform: scale(1.5);
-    margin-right: 6%; /*fallback for old browsers */
-    margin-right: calc(5% + 10px);
-    margin-left: 5%;
+#hover-expand .col-md-3 {
+    padding: 15px;
+}
+
+#hover-expand .web-dev {
+    /*background-color: #EEEEEF;*/
+    width: 150px;
+    height: 150px;
 }
 
 
+#hover-expand .mobile-app {
+    background-color: #2c9bf4;
+    width: 150px;
+    height: 150px;
+}
+
+#hover-expand .dig-market {
+    background-color: #EEEEEF;
+    width: 150px;
+    height: 150px;
+}
+
+#hover-expand .ui-solutions {
+    background-color: #2c9bf4;
+    width: 150px;
+    height: 150px;
+}
+
+/*========= end row 1 =======*/
+
+/*========= row 2 =======*/
+
+#hover-expand .ux-des {
+    background-color: #2c9bf4;
+    width: 150px;
+    height: 150px;
+}
+
+#hover-expand .ios-dev {
+    background-color: #EEEEEF;
+    width: 150px;
+    height: 150px;
+}
+
+#hover-expand .brand-sec {
+    background-color: #2c9bf4;
+    width: 150px;
+    height: 150px;
+}
+
+#hover-expand .emerging-tech {
+    background-color: #EEEEEF;
+    width: 150px;
+    height: 150px;
+}
+
+/*========= end row 2 =======*/
 /*===========================
         About Section
 ============================ */
@@ -634,7 +679,88 @@ header {
     margin: 0;
 }
 
-/****************/
+/******* Brand CSS *********/
+
+.main-div {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+.panel22:hover,
+.panel22.hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.panel22 {
+    margin-top: -21%;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+
+    background-color: #00aeef;
+
+
+}
+
+.front22, .back22 {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.front22 {
+    z-index: 2;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.back22 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    margin-top: -100px;
+    text-align: center;
+}
+
+.service-main-outer .main-div .panel22 .front22 h2 {
+    text-transform: uppercase;
+    color: #00aeef;
+    font-size: 110px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.service-main-outer .main-div .panel22 .front22 p {
+    letter-spacing: 24px;
+    color: #00aeef;
+    font-weight: 500;
+}
+
+.service-main-outer .main-div .panel22 .back22 {
+    color: #6f7a82;
+}
+
+/******* Flip CSS *********/
 
 .flip-container {
     -webkit-perspective: 1000;
@@ -992,4 +1118,51 @@ header {
 
 .newsletter-box .certificate a:nth-child(2) {
     float: left;
+}
+
+@media (min-width: 768px) {
+    .cycle-bg .flip-container .flipper .front h2 {
+        text-transform: uppercase;
+        color: #00aeef;
+        font-size: 80px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .div1-class {
+        margin: 0 auto;
+        padding: 49px 80px;
+    }
+
+    .div1-class .p2 {
+        color: #889198;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hover-expand .col-md-3 {
+        padding: 15px;
+        margin-bottom: 45px;
+        /*margin: 15px;*/
+    }
+}
+
+@media (max-width: 435px) {
+    .cycle-bg .flip-container .flipper .front h2 {
+        font-size: 50px;
+    }
+
+    .div1-class a {
+        padding: 0px 10px;
+        font-size: 14px;
+    }
+
+    #hover-expand .col-md-3 {
+        padding: 15px;
+        margin: 15px;
+    }
 }

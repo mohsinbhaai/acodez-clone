@@ -99,26 +99,33 @@
     </div>
 </header>
 <section>
-    <img src="https://cdn.acodez.in/wp-content/themes/acodez/images/contact-banner.jpg" class="work-bg img-fluid" alt="">
-    <div class="work-text">
-        <h1>Get In Touch</h1>
-        <ul class="contact-numbers">
-            <li>
-                <a href="tel:9619759697" class="india">
-                    <span>India</span>  : +91 95 44 66 88 44
-                </a>
-            </li>
-            <li>
-                <a href="tel:+16262001085" class="us" style="background-position: 0 -1277px;"> <span>US</span>: +1 626 200 1085</a>
-            </li>
-            <li>
-                <a href="tel:+442031298975" class="uk" style="background-position: 0 -1318px;"> <span>UK</span>      : +44 203 129 8975</a>
-            </li>
-            <li>
-                <a href="mailto:info@acodez.in" class="email" style="background-position: 0 -1368px;"> <span>Email</span> : info@acodez.in</a>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+            <img src="https://cdn.acodez.in/wp-content/themes/acodez/images/contact-banner.jpg" class="work-bg img-fluid" alt="">
+            <div class="work-text">
+                <h1>Get In Touch</h1>
+                <ul class="contact-numbers">
+                    <li>
+                        <a href="tel:9619759697" class="india">
+                            <span>India</span>  : +91 95 44 66 88 44
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+16262001085" class="us" style="background-position: 0 -1277px;"> <span>US</span>: +1 626 200 1085</a>
+                    </li>
+                    <li>
+                        <a href="tel:+442031298975" class="uk" style="background-position: 0 -1318px;"> <span>UK</span>      : +44 203 129 8975</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="mailto:info@acodez.in" class="email" style="background-position: 0 -1368px;"> <span>Email</span> : info@acodez.in</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            </div>
+        </div>
     </div>
+
 </section>
 <section class="form-section">
     <div class="contact-sec1 contact-top-sec1"><div class="container"><div class="enquiry-box"><h3>We'd love to hear from you!</h3><p>Brief us your requirements below, and let's connect.</p><form class="contact-form" method="post"><div class="row"><div class="col-sm-6"><ul class="apply-now"><li>
@@ -168,10 +175,10 @@
 <section class="location-section">
     <div class="container">
         <div class="row">
-            <div class="text-center">
-                <h1>Locations</h1><br>
+            <div class="location-headings">
+                <h1 class="display-1">Locations</h1><br>
             </div>
-            <div style="width: 1111px;">
+            <div class="location-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="400" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
@@ -215,7 +222,7 @@
 <section class="footer-1 p-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 nav-footer">
+            <div class="col-md-2 nav-footer col d-none">
                 <p>Navigation</p>
                 <p>Home</p>
                 <p>About</p>
@@ -226,7 +233,7 @@
                 <p>Blog</p>
                 <p>Contact</p>
             </div>
-            <div class="col-md-2 services">
+            <div class="col-md-2 services col d-none">
                 <p>Services</p>
                 <p>Web Development</p>
                 <p>UX Design</p>
@@ -237,27 +244,32 @@
                 <p>Emerging Technology Services</p>
                 <p>UI Solutions</p>
             </div>
-            <div class="col-md-4 footer-contact">
+            <div class="col-md-4 footer-contact col-sm-6">
                 <p>Contact Us</p>
                 <p class="email-iconn"><i class="fa fa-envelope-o"></i><span>info@acodez.in</span></p>
                 <p class="skype-iconn"><i class="fa fa-skype"></i><span> acodez</span></p>
                 <p class="phone-iconn"><i class="fa fa-phone"></i><span>+91 95 44 66 88 44</span></p>
                 <p>Find us on</p>
-                <p class="footer-icons"><span class="fa fa-facebook fb"></span><span class="fa fa-twitter tweet"></span>
-                    <span class="fa fa-linkedin linked"></span><span class="fa fa-google-plus googleicon"></span></p>
-                <p></p>
+                <div class="col">
+                <p class="footer-icons">
+                    <span class="fa fa-facebook fb"></span>
+                    <span class="fa fa-twitter tweet"></span>
+                    <span class="fa fa-linkedin linked"></span>
+                    <span class="fa fa-google-plus googleicon"></span>
+                </p>
+                </div>
             </div>
-            <div class="col-md-4 newsletter-box">
+            <div class="col-md-4 newsletter-box col-sm-6">
                 <p>Newsletter</p>
                 <input type="text" class="txt-box" value="Your Email address" onfocus="if (this.value == 'Your Email address') this.value = ''" onblur="if (this.value == '') this.value = 'Your Email address'">
-                <button class="subscribe-btn hvr-grow-shadow">Subscribe Now!</button>
+                <button class="subscribe-btn hvr-grow-shadow btn btn-block" type="button">Subscribe Now!</button>
                 <p>Enter your email ID above to subscribe to our newsletter.</p>
                 <a class="awards" href="">
                     <span>12 International Awards</span>
                 </a>
                 <div class="certificate">
                     <a href=""><img src="https://cdn.acodez.in/wp-content/themes/acodez/images/bing-ads.png" alt=""></a>
-                    <a href=""><img src="https://cdn.acodez.in/wp-content/themes/acodez/images/bing-ads.png" alt=""></a>
+                    <!--<a href=""><img src="https://cdn.acodez.in/wp-content/themes/acodez/images/bing-ads.png" alt=""></a>-->
                 </div>
             </div>
         </div>
