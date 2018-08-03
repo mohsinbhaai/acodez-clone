@@ -179,9 +179,6 @@
     <!--</div>-->
 <!--</header>-->
 <div class="banner"></div>
-<!--<div class="text-p">-->
-<!--<p>We Create Stunning website!</p>-->
-<!--</div>-->
 <section class="about-section">
     <div class="container">
         <div class="row">
@@ -189,6 +186,7 @@
                 <h2>About</h2>
                 <div class="border-bottom-h2"></div>
             </div>
+        </div>
             <div class="row about-content">
                 <div class="col-sm-6 content-1">
                     We are an international award-winning web design and digital advertising agency based in India - with offices in Delhi NCR, Mumbai.
@@ -197,7 +195,7 @@
                     Acodez is rated as one of the top web agencies and review sites. We have a right blend of award-winning designers, expert programmers and Google certified digital marketers which make us a unique one-stop solution for hundreds of our clients, spread across 70+ countries now.
                 </div>
             </div>
-        </div>
+
     </div>
 </section>
 
@@ -413,6 +411,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-6 country-num-class1">
+
                 <div class="country-num-class">
                     <i class="fa fa-globe"></i>
                     <h3>70+</h3>
@@ -447,7 +446,7 @@
             </div>
             <div class="col-md-3 col-6 office-num-class1">
                 <div class="office-num-class">
-                    <i class="fa fa-map-marked"></i>
+                    <i class="fa fa-map-marker"></i>
                     <h3>4</h3>
                     <p>Office</p>
                     <p>Locations</p>
@@ -546,10 +545,10 @@
 </section>
 
 
-<section class="footer-1 p-5">
+<section class="footer-1">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 nav-footer col d-none">
+            <div class="col-md-2 nav-footer col d-none d-sm-block">
                 <p>Navigation</p>
                 <p>Home</p>
                 <p>About</p>
@@ -560,7 +559,7 @@
                 <p>Blog</p>
                 <p>Contact</p>
             </div>
-            <div class="col-md-2 services col d-none">
+            <div class="col-md-2 services col d-none d-sm-block">
                 <p>Services</p>
                 <p>Web Development</p>
                 <p>UX Design</p>
@@ -589,7 +588,7 @@
             <div class="col-md-4 newsletter-box col-sm-6">
                 <p>Newsletter</p>
                 <input type="text" class="txt-box" value="Your Email address" onfocus="if (this.value == 'Your Email address') this.value = ''" onblur="if (this.value == '') this.value = 'Your Email address'">
-                <button class="subscribe-btn hvr-grow-shadow btn btn-block" type="button">Subscribe Now!</button>
+                <button class="subscribe-btn hvr-grow-shadow" type="button">Subscribe Now!</button>
                 <p>Enter your email ID above to subscribe to our newsletter.</p>
                 <a class="awards" href="">
                     <span>12 International Awards</span>
@@ -636,31 +635,31 @@
         });
     });
 </script>
-<script>
-    (function ($) {
+<!--<script>-->
+    <!--(function ($) {-->
 
-        var navbar = $('.navbar');
-        var lastScrollTop = 0;
+        <!--var navbar = $('.navbar');-->
+        <!--var lastScrollTop = 0;-->
 
-        $(window).scroll(function () {
-            var st = $(this).scrollTop();
-            // Scroll down
-            if (st > lastScrollTop) {
-                navbar.fadeOut();
-            }
-            // Scroll up but still lower than 200 (change that to whatever suits your need)
-            else if(st < lastScrollTop && st > 200) {
-                navbar.fadeIn();
-                navbar.removeClass('navbar-light bg-transparent').addClass('navbar-dark bg-custom');
-            }
-            // Reached top
-            else {
-                navbar.removeClass('navbar-dark bg-custom').addClass('navbar-light bg-transparent');
-            }
-            lastScrollTop = st;
-        });
+        <!--$(window).scroll(function () {-->
+            <!--var st = $(this).scrollTop();-->
+            <!--// Scroll down-->
+            <!--if (st > lastScrollTop) {-->
+                <!--navbar.fadeOut();-->
+            <!--}-->
+            <!--// Scroll up but still lower than 200 (change that to whatever suits your need)-->
+            <!--else if(st < lastScrollTop && st > 200) {-->
+                <!--navbar.fadeIn();-->
+                <!--navbar.removeClass('navbar-light bg-transparent').addClass('navbar-dark bg-custom');-->
+            <!--}-->
+            <!--// Reached top-->
+            <!--else {-->
+                <!--navbar.removeClass('navbar-dark bg-custom').addClass('navbar-light bg-transparent');-->
+            <!--}-->
+            <!--lastScrollTop = st;-->
+        <!--});-->
 
-    })(jQuery);
-</script>
+    <!--})(jQuery);-->
+<!--</script>-->
 </body>
 </html>

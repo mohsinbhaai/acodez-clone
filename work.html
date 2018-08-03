@@ -124,12 +124,40 @@
 <!--</div>-->
 <!--</div>-->
 <!--</header>-->
-<section>
-<img src="https://cdn.acodez.in/wp-content/themes/acodez/images/works-banner.jpg" class="work-bg img-fluid" alt="">
-<div class="work-text">
-    <p>Works</p>
-    <span>We have been designing, developing, branding, optimizing, and creating apps and software for a number of clients, belonging to various industry dimensions. Implementing the latest design ideas and innovative technologies, followed by tried-and-proven techniques, has helped us to devise cutting-edge solutions for our clients.</span>
-</div>
+<!--<section>-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-12">-->
+            <!--<img src="https://cdn.acodez.in/wp-content/themes/acodez/images/works-banner.jpg" class="work-bg img-fluid" alt="">-->
+            <!--</div>-->
+            <!--<div class="work-text">-->
+                <!--<p>Works</p>-->
+                <!--<span>We have been designing, developing, branding, optimizing, and creating apps and software for a number of clients, belonging to various industry dimensions. Implementing the latest design ideas and innovative technologies, followed by tried-and-proven techniques, has helped us to devise cutting-edge solutions for our clients.</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<section class="inner-page">
+    <div class="inner-banner">
+        <div class="img" style="background: url(https://cdn.acodez.in/wp-content/themes/acodez/images/works-banner.jpg) no-repeat left top;">
+
+        </div>
+        <img src="https://cdn.acodez.in/wp-content/themes/acodez/images/works-banner.jpg" class="img-fluid" alt="">
+        <div class="caption">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <h2>Works</h2>
+                    <p>We have been designing, developing, branding, optimizing, and creating apps and software
+                        for a number of clients, belonging to various industry dimensions. Implementing the
+                        latest design ideas and innovative technologies, followed by tried-and-proven techniques,
+                        has helped us to devise cutting-edge solutions for our clients.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section style="margin-top: 200px; margin-bottom: 300px">
@@ -182,10 +210,10 @@
     </div>
 </section>
 
-<section class="footer-1 p-5">
+<section class="footer-1">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 nav-footer col d-none">
+            <div class="col-md-2 nav-footer col d-none d-sm-block">
                 <p>Navigation</p>
                 <p>Home</p>
                 <p>About</p>
@@ -196,7 +224,7 @@
                 <p>Blog</p>
                 <p>Contact</p>
             </div>
-            <div class="col-md-2 services col d-none">
+            <div class="col-md-2 services col d-none d-sm-block">
                 <p>Services</p>
                 <p>Web Development</p>
                 <p>UX Design</p>
@@ -225,7 +253,7 @@
             <div class="col-md-4 newsletter-box col-sm-6">
                 <p>Newsletter</p>
                 <input type="text" class="txt-box" value="Your Email address" onfocus="if (this.value == 'Your Email address') this.value = ''" onblur="if (this.value == '') this.value = 'Your Email address'">
-                <button class="subscribe-btn hvr-grow-shadow btn btn-block" type="button">Subscribe Now!</button>
+                <button class="subscribe-btn hvr-grow-shadow" type="button">Subscribe Now!</button>
                 <p>Enter your email ID above to subscribe to our newsletter.</p>
                 <a class="awards" href="">
                     <span>12 International Awards</span>
@@ -238,31 +266,32 @@
         </div>
     </div>
 </section>
-<script>
-    (function ($) {
 
-        var navbar = $('.navbar');
-        var lastScrollTop = 0;
+<!--<script>-->
+    <!--(function ($) {-->
 
-        $(window).scroll(function () {
-            var st = $(this).scrollTop();
-            // Scroll down
-            if (st > lastScrollTop) {
-                navbar.fadeOut();
-            }
-            // Scroll up but still lower than 200 (change that to whatever suits your need)
-            else if(st < lastScrollTop && st > 200) {
-                navbar.fadeIn();
-                navbar.removeClass('navbar-light bg-transparent').addClass('navbar-dark bg-custom');
-            }
-            // Reached top
-            else {
-                navbar.removeClass('navbar-dark bg-custom').addClass('navbar-light bg-transparent');
-            }
-            lastScrollTop = st;
-        });
+        <!--var navbar = $('.navbar');-->
+        <!--var lastScrollTop = 0;-->
 
-    })(jQuery);
-</script>
+        <!--$(window).scroll(function () {-->
+            <!--var st = $(this).scrollTop();-->
+            <!--// Scroll down-->
+            <!--if (st > lastScrollTop) {-->
+                <!--navbar.fadeOut();-->
+            <!--}-->
+            <!--// Scroll up but still lower than 200 (change that to whatever suits your need)-->
+            <!--else if(st < lastScrollTop && st > 200) {-->
+                <!--navbar.fadeIn();-->
+                <!--navbar.removeClass('navbar-light bg-transparent').addClass('navbar-dark bg-custom');-->
+            <!--}-->
+            <!--// Reached top-->
+            <!--else {-->
+                <!--navbar.removeClass('navbar-dark bg-custom').addClass('navbar-light bg-transparent');-->
+            <!--}-->
+            <!--lastScrollTop = st;-->
+        <!--});-->
+
+    <!--})(jQuery);-->
+<!--</script>-->
 </body>
 </html>

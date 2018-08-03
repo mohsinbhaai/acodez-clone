@@ -116,8 +116,10 @@ a {
 
 #hover-expand .web-dev {
     /*background-color: #EEEEEF;*/
-    width: 150px;
-    height: 150px;
+    /*width: 150px;*/
+    /*height: 150px;*/
+    /*border: 1px solid black;*/
+    margin-bottom: 20px;
 }
 
 
@@ -543,6 +545,8 @@ a {
     text-align: center;
 }
 
+
+
 .number-count p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -874,7 +878,7 @@ a {
     text-decoration: none;
     border: 2px solid #00aeef;
     border-radius: 25px;
-    padding: 0 25px;
+    padding: 10px 25px;
     display: inline-block;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -1039,8 +1043,12 @@ a {
     line-height: 36px;
     border-radius: 50%;
     background: #3b5998;
-    margin-left: 13px;
+    margin-left: 9px;
     transition: all 0.3s ease-out 0s;
+}
+
+.footer-contact .footer-icons span:first-child {
+    margin-left: -21px;;
 }
 
 .footer-contact .footer-icons span:nth-child(2) {
@@ -1139,10 +1147,6 @@ a {
         font-family: "Montserrat", sans-serif;
     }
 
-    .div1-class {
-        margin: 0 auto;
-        padding: 49px 80px;
-    }
 
     .div1-class .p2 {
         color: #889198;
@@ -1153,24 +1157,12 @@ a {
     }
 }
 
-/*@media (min-width: 1200px) and (max-width: 1400px){*/
-
-    /*#hover-expand .col-md-3 {*/
-        /*!*padding: 2px;*!*/
-        /*border: 1px solid black;*/
-        /*!*margin: 15px;*!*/
-    /*}*/
-/*}*/
 
 @media (min-width: 575px) {
     .cycle-bg .flip-container .flipper .front h2 {
         font-size: 50px;
     }
 
-    .div1-class a {
-        padding: 0px 10px;
-        font-size: 14px;
-    }
 
     #hover-expand .col-md-3 {
         padding: 15px;
@@ -1179,24 +1171,24 @@ a {
 
 }
 
-    @media (min-width : 375px) {
+    /*@media (min-width : 375px) {*/
 
-        #hover-expand .col-md-3 {
-            padding: 15px;
-            margin: 15px;
-        }
+        /*!*#hover-expand .col-md-3 {*!*/
+            /*!*padding: 15px;*!*/
+            /*!*margin: 15px;*!*/
+        /*!*}*!*/
 
-        .cycle-bg .flip-container .flipper .front h2 {
-            font-size: 50px;
-        }
-    }
+        /*.cycle-bg .flip-container .flipper .front h2 {*/
+            /*font-size: 50px;*/
+        /*}*/
+    /*}*/
 
 @media (min-width : 275px) {
 
-    #hover-expand .col-md-3 {
-        padding: 15px;
-        margin: 15px;
-    }
+    /*#hover-expand .col-md-3 {*/
+        /*padding: 15px;*/
+        /*margin: 15px;*/
+    /*}*/
 
     .cycle-bg .flip-container .flipper .front h2 {
         font-size: 50px;
